@@ -81,7 +81,7 @@ img_niht = Y_niht_tens(:,:,[r_band g_band b_band]);
 img_mc = Y_mc_tens(:,:,[r_band g_band b_band]);
 
 % Normalize
-max_true = 0.9*reshape(max(max(img_true(:,:,:))),[],1); 
+max_true = 0.9*reshape(max(max(img_true(:,:,:))),[],1);
 for i=1:3
     img_true(:,:,i) = img_true(:,:,i) ./ max_true(i);
     img_niht(:,:,i) = img_niht(:,:,i) ./ max_true(i);
@@ -206,6 +206,3 @@ imagesc(Y_mc_tens(sel2_x,sel2_y, sel_band),clim)
 axis off;axis equal;
 colormap(color_pal)
 box on
-
-
-
