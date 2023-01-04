@@ -23,8 +23,6 @@ r = 3;
 
 m = size(Y_true,1);
 n = size(Y_true,2);
-rho_r = r*(m+n - r)/p
-rho_s = s/p
 
 
 [L, S, Y_ls, U, V, T] = matproj_ls_accaltproj(Y_true, r, s, 1e-5, [], []);
@@ -33,6 +31,11 @@ rho_s = s/p
 
 delta = 0.33;
 p = round(prod(image_size)*delta);
+
+rho_r = r*(m+n - r)/p
+rho_s = s/p
+
+
 [A, aA] = generate_fjlt(prod(image_size), round(prod(image_size)*delta));
 b = A(Y_true(:));
 
@@ -42,7 +45,6 @@ opts.S_true = [];
 opts.MAX_ITER = 300;
 opts.tol_res = 1e-3;
 opts.verb = 1;
-opts.X
 
 matproj_ls = @(M, r, s, tol, L0, S0) matproj_ls_accaltproj(M, r, s, tol, [], []);
 
