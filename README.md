@@ -4,11 +4,13 @@ Code for the recovery of low-rank plus sparse matrices, see the [arxiv preprint]
 
 ## Citation
 ```
-@misc{Tanner2020compressed,
-  author = {Tanner, Jared and Vary, Simon},  
+@article{Tanner2023Compressed,
   title = {Compressed sensing of low-rank plus sparse matrices},
-  url = {https://arxiv.org/abs/2007.09457},
-  publisher = {arXiv},
-  year = {2020},
+  journal = {Applied and Computational Harmonic Analysis},
+  year = {2023},
+  issn = {1063-5203},
+  doi = {https://doi.org/10.1016/j.acha.2023.01.008},
+  url = {https://www.sciencedirect.com/science/article/pii/S106352032300009X},
+  author = {Jared Tanner and Simon Vary},
 }
 ```
