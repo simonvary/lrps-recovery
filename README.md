@@ -2,7 +2,7 @@
 
 Code for the recovery of low-rank plus sparse matrices, see the [arxiv preprint](https://arxiv.org/abs/2007.09457) and the [published paper](https://www.sciencedirect.com/science/article/pii/S106352032300009X).
 
-Python implementation availible [here](https://github.com/simonvary/pynopt).
+Python implementation available [here](https://github.com/simonvary/pynopt).
 
 ## Citation
 ```
